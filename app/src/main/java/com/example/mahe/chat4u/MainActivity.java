@@ -10,8 +10,29 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final int SIGN_IN_REQUEST_CODE = 10 ;
+private static final int SIGN_IN_REQUEST_CODE = 10 ;
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        super.onActivityResult(requestCode, resultCode, data);
 
+        if (requestCode == SIGN_IN_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                Toast.makeText(this,
+                        "Successfully signed in. Welcome!",
+                        Toast.LENGTH_LONG)
+                        .show();
+                displayChatMessages();
+            } else {
+                Toast.makeText(this,
+                        "We couldn't sign you in. Please try again later.",
+                        Toast.LENGTH_LONG)
+                        .show();
+
+                // Close the app
+                finish();
+            }
+        }
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,30 +60,9 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        Intent data = new Intent();
+      
 
-        private void onActivityResult(int requestCode, int resultCode, Intent data)
-        {
-            super.onActivityResult(requestCode, resultCode, data);
 
-            if (requestCode == SIGN_IN_REQUEST_CODE) {
-                if (resultCode == RESULT_OK) {
-                    Toast.makeText(this,
-                            "Successfully signed in. Welcome!",
-                            Toast.LENGTH_LONG)
-                            .show();
-                    displayChatMessages();
-                } else {
-                    Toast.makeText(this,
-                            "We couldn't sign you in. Please try again later.",
-                            Toast.LENGTH_LONG)
-                            .show();
-
-                    // Close the app
-                    finish();
-                }
-            }
-        }
     }
     private void displayChatMessages()
     {

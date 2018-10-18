@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "639160572986",
+    "firebase_url": "https://chat4u-a3f1b.firebaseio.com",
+    "project_id": "chat4u-a3f1b",
+    "storage_bucket": "chat4u-a3f1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639160572986:android:d4bb96460a4bb5d2",
+        "android_client_info": {
+          "package_name": "com.example.mahe.chat4u"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639160572986-akk7inj7137vjim4jcirvmjvm8vuepkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mahe.chat4u",
+            "certificate_hash": "603dc7728ad06277979924ad17be4a6ebd6ec544"
+          }
+        },
+        {
+          "client_id": "639160572986-ir90fal7k4d2dnmujaldpeasqjq7q10t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAztRwkvvLtwPXlPP3LDIgU-OgPBem_I9Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639160572986-ir90fal7k4d2dnmujaldpeasqjq7q10t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
